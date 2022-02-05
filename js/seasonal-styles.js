@@ -54,8 +54,8 @@
 
                     let season = $(this).attr("href");
 
-                    $("#logo").attr("src", "images/Fall.gif");
-                    $("#wear").attr("src", "images/Fall-wear.jpg");
+                    $("#logo").attr("src", "images/fall.gif");
+                    $("#wear").attr("src", "images/fall-wear.jpg");
                     $("html").css("background-color", "#A81124");
                     $("p#text").text("Some really pretty weather! Fall leaves and heavy jacket vibes")
 
@@ -70,8 +70,8 @@
 
                     let season = $(this).attr("href");
 
-                    $("#logo").attr("src", "images/Winter.gif");
-                    $("#wear").attr("src", "images/Winter-wear.jpg");
+                    $("#logo").attr("src", "images/winter.gif");
+                    $("#wear").attr("src", "images/winter-wear.jpg");
                     $("html").css("background-color", "#005393");
                     $("p#text").text("Winter is gonna be extra cold! Get ready for warm hat weather!")
 
