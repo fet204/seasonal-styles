@@ -43,11 +43,13 @@
 		<h1 class="masthead">Eddie Browser</h1>
 		<nav>
 			<ul>
-				<li class="seasons"><a href="Default">Default</a></li>
+				<li><a href="index.html">Back Home</a></li>
+                <!--
 				<li class="seasons"><a href="Spring">Spring</a></li>
 				<li class="seasons"><a href="Summer">Summer</a></li>
 				<li class="seasons"><a href="Fall">Fall</a></li>
 				<li class="seasons"><a href="Winter">Winter</a></li>
+                -->
 			</ul>
 		</nav>
 	</header>
@@ -100,13 +102,51 @@
 			var datetext = $('input[name=dateField]').val();//grab data from textbox
 			var formDate = new Date(datetext);//create a date from form input
 			var today = new Date();
-			
+            var month = formDate.getMonth();
+
+
+            switch(month){
+                case 0:
+                case 1:
+                case 2:
+                    $("#logo").attr("src", "images/winter.gif")
+                    $("#wear").attr("src","images/winter-wear.jpg")
+                    $("html").css("background-color", "#005393")
+                break;
+
+                case 3:
+                case 4:
+                case 5:
+                    $("#logo").attr("src", "images/winter.gif")
+                    $("#wear").attr("src","images/winter-wear.jpg")
+                    $("html").css("background-color", "#005393")
+                break;
+
+                case 6:
+                case 7:
+                case 8:
+                    $("#logo").attr("src", "images/winter.gif")
+                    $("#wear").attr("src","images/winter-wear.jpg")
+                    $("html").css("background-color", "#005393")
+                break;
+
+                case 9:
+                case 10:
+                case 11:
+                    $("#logo").attr("src", "images/winter.gif")
+                    $("#wear").attr("src","images/winter-wear.jpg")
+                    $("html").css("background-color", "#005393")
+                break;
+
+            }
+			/*
 			if(formDate > today)
 			{
 				alert(datetext + " is in the future!");
 			}else{
 				alert(datetext + " is in the past!");
 			}
+            */
 		});
 	});
     </script>
